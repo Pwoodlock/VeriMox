@@ -1,11 +1,6 @@
-# VeriMox
-
-**Visual Backup Verification for Proxmox Backup Server (PBS)**  
-Created and maintained by **Patrick Woodlock**
-
 > **VeriMox is free, because data integrity should never be a luxury.**  
 > Whether you're an MSP, school, nonprofit, enterprise, or solo developer — no one should lose data simply because they couldn’t afford a commercial tool.  
-> While this could have been monetized, it's my belief that disaster recovery verification should be available to everyone.  
+> Everyone deserves the ability to verify their backups and protect their systems with confidence.  
 > If VeriMox helps even one person avoid a catastrophic restore failure, it has done its job.
 
 ---
