@@ -64,5 +64,8 @@ Free for private and commercial use.
 
 ## Maintainer
 
-This project is released by [Your Name or Company], as a standalone module from a larger internal infrastructure automation platform.
+This project is released by **Patrick Woodlock**, as a standalone module from a larger internal infrastructure automation platform.
+
+It is shared with the community to improve confidence in disaster recovery operations.  
+If you've ever trusted a backup system only to find the restore fails when it matters — this tool is for you. VeriMox offers a simple, auditable way to visually confirm your backups actually boot.
 
