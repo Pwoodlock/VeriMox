@@ -1,7 +1,19 @@
 # VeriMox
 
-VeriMox is a lightweight disaster recovery verification tool for Proxmox Backup Server (PBS).  
-It restores VMs from PBS, boots them in isolation, captures a screenshot of the login screen, and optionally uploads the screenshot to a FastAPI server for auditing or dashboard display.
+**Visual Backup Verification for Proxmox Backup Server (PBS)**  
+Created and maintained by **Patrick Woodlock** 
+
+> **VeriMox is free, because data integrity should never be a luxury.**  
+> Whether you're an MSP, a school, a healthcare provider, or a solo developer — backups must work.  
+> This tool helps ensure that by automatically restoring Proxmox backups, booting the VMs, and capturing visual proof they actually function.
+
+---
+
+VeriMox is a disaster recovery verification utility for Proxmox PBS.  
+It restores the latest VM backups, boots them in isolation, captures a screenshot (e.g. Windows login screen), and optionally uploads it to a central dashboard or FastAPI endpoint for audit tracking.
+
+This tool was released as a standalone module from a larger internal platform to serve the wider community — because **no system is truly protected until a restore is verified.**
+
 
 ---
 
@@ -62,10 +74,4 @@ Free for private and commercial use.
 
 ---
 
-## Maintainer
-
-This project is released by **Patrick Woodlock**, as a standalone module from a larger internal infrastructure automation platform.
-
-It is shared with the community to improve confidence in disaster recovery operations.  
-If you've ever trusted a backup system only to find the restore fails when it matters — this tool is for you. VeriMox offers a simple, auditable way to visually confirm your backups actually boot.
 
