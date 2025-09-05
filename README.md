@@ -23,59 +23,6 @@ It was originally developed as part of a broader infrastructure automation syste
 
 ---
 
-## ✅ Purpose
-
-VeriMox helps sysadmins and MSPs ensure that:
-
-- PBS backups are restorable
-- VMs boot successfully to the OS login screen
-- Visual proof is captured for compliance and DR audits
-- Duplicate or stale restores are detected via SHA hashing
-
----
-
-## ⚙️ Features
-
-- Ansible-driven restore, boot, screenshot, and cleanup workflow
-- Supports both cron and API-triggered execution
-- Screenshot capture via `qm screenshot`
-- Optional FastAPI upload for dashboard integration
-- SHA-256 hash verification to detect repeated results
-- No agents or open guest VM ports required
-
----
-
-## 📦 Components
-
-- `ansible/verify_pbs_backup.yml` – Main verification playbook
-- `fastapi/main.py` – Screenshot upload endpoint (optional)
-- `scripts/install_cron.sh` – Weekly test restore scheduler
-- `docs/usage.md` – Setup and configuration guide
-
----
-
-## 🧰 Requirements
-
-- Proxmox VE node with PBS access
-- Ansible 2.10+ (YAML playbooks)
-- Python 3.10+ (if using FastAPI)
-- Optional: cron job or external scheduler
-
----
-
-## 🔄 Example Workflow
-
-1. Ansible selects the latest backup from PBS
-2. Restores it to a temporary VM ID (e.g. 9000)
-3. Boots the VM and waits for OS to load
-4. Captures a screenshot from the Proxmox host
-5. Computes a SHA-256 hash of the screenshot
-6. Uploads the screenshot or stores it locally
-7. Destroys the temporary test VM
-8. Optional dashboard displays or emails results
-
----
-
 ## 📜 License
 
 Licensed under the MIT License.  
